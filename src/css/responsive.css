@@ -1,0 +1,18 @@
+@media (max-width: 875px) {
+  .instagram-phone {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    min-height: 100vh;
+    background-color: var(--shape);
+  }
+
+  .group {
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid transparent;
+  }
+}

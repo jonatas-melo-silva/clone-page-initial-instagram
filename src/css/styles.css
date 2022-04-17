@@ -1,0 +1,140 @@
+:root {
+  --background: #f3f3f3;
+  --shape: #ffffff;
+  --blue: #0095f6;
+  --text: #ffffff;
+  --text-muted: #a0a0a0;
+  --border: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.instagram-phone img {
+  height: 50rem;
+}
+
+.instagram-continue {
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: space-around; /* vertical */
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--shape);
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid var(--border);
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  height: 6rem;
+}
+
+.instagram-login {
+  background-color: var(--blue);
+  color: var(--text);
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout {
+  color: var(--blue);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: var(--text-muted);
+  font-weight: bold;
+}
+
+.link-blue {
+  color: var(--blue);
+}
+
+.get-the-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.3rem 0;
+  text-align: center;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('../assets/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('../assets/googleplay-button.png');
+}
